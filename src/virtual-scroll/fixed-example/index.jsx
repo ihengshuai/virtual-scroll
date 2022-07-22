@@ -106,7 +106,7 @@ function FixedExample(props) {
               </div>
             )
         }
-        { waiting ? <div className={"loading"}><img src="/loading.gif" alt="" /><div>正在加载...</div></div> : null }
+        { waiting ? <div className={"loading"}><img src={process.env.PUBLIC_URL + "/loading.gif"} alt="" /><div>正在加载...</div></div> : null }
         
       </div>
     </div>
